@@ -2,7 +2,7 @@ import assert from 'assert';
 import sinon from 'sinon';
 import { signHmac } from '../src/handlers';
 
-describe('The function signHmac', () => {
+describe('A function signHmac', () => {
   it('should sign "hello, world"', () => {
     const opts = {
       account: {

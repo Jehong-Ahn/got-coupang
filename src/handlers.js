@@ -33,19 +33,6 @@ const signHmac = (opts) => {
     + `, signature=${signature}`;
 };
 
-const onError = error => ({
-  request: {
-    method: error.options.method,
-    path: error.options.path,
-    body: error.options.body,
-    headers: error.options.headers,
-  },
-  response: {
-    statusCode: error.response.statusCode,
-    body: error.response.body,
-    retryCount: error.response.retryCount,
-  },
-  error: error.toString()
-});
+const onError = error => error;
 
 export { setVendorId, signHmac, onError };

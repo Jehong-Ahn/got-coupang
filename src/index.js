@@ -17,7 +17,7 @@ export default function createClient(options = {}) {
       account: {
         vendorId: process.env.COUPANG_VENDOR_ID || options.vendorId,
         accessKey: process.env.COUPANG_ACCESS_KEY || options.accessKey,
-        secretKey: process.env.COUPANG_SECRET_KET || options.secretKey,
+        secretKey: process.env.COUPANG_SECRET_KEY || options.secretKey,
       },
     },
     ...options
